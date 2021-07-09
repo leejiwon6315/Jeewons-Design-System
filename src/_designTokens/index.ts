@@ -1,4 +1,4 @@
-export const buttonPalette = {
+export const colorPalette = {
   whiteText: "white",
   blackText: "rgb(35, 35, 35)",
 

@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { ButtonPropsType } from "../../../types/buttonTypes";
-import { buttonPalette } from "../../../designTokens/color";
+import { ButtonPropsType } from "../../../_types/buttonTypes";
+import { colorPalette } from "../../../_designTokens";
 
 export default function ButtonNo1(props: ButtonPropsType): JSX.Element {
   const { text, textColor, size } = props;
@@ -14,8 +14,8 @@ export default function ButtonNo1(props: ButtonPropsType): JSX.Element {
 }
 
 const StyledButton = styled.button`
-  color: ${(props) => props.color || buttonPalette.blackText};
-  background: ${buttonPalette.redBackground};
+  color: ${(props) => props.color || colorPalette.blackText};
+  background: ${colorPalette.redBackground};
   border: none;
 
   ${(props: { size: string }) =>
