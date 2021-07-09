@@ -3,17 +3,17 @@ import styled, { css } from "styled-components";
 import { ButtonPropsType } from "../../../_types/buttonTypes";
 import { colorPalette } from "../../../_designTokens";
 
-export default function ButtonNo1(props: ButtonPropsType): JSX.Element {
+export default function DefaultButton(props: ButtonPropsType): JSX.Element {
   const { text, textColor, size } = props;
 
   return (
-    <StyledButton color={textColor} size={size}>
+    <Button color={textColor} size={size}>
       {text}
-    </StyledButton>
+    </Button>
   );
 }
 
-const StyledButton = styled.button`
+const Button = styled.button`
   color: ${(props) => props.color || colorPalette.blackText};
   background: ${colorPalette.redBackground};
   border: none;
