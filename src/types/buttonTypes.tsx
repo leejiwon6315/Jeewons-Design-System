@@ -1,7 +1,5 @@
-export type ButtonTypes = {
+export type ButtonPropsType = {
   text: string;
-  width: string;
-  height: string;
-  borderRadius: string;
-  func: Function;
+  textColor: string;
+  size: string;
 };
