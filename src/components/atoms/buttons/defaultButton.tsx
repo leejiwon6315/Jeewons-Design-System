@@ -20,8 +20,14 @@ const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    transform: ${TRANSFORM.translateY};
+    transform: ${TRANSFORM.hoverPosition};
     box-shadow: ${SHADOW.boxShadow2};
+  }
+
+  &:active {
+    transform: ${TRANSFORM.clickScale};
+    box-shadow: ${SHADOW.boxShadow1};
+    transform: ${TRANSFORM.defaultPosition};
   }
 
   ${(props: { size: string | undefined }) =>

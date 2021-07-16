@@ -14,5 +14,7 @@ export const SHADOW = {
 };
 
 export const TRANSFORM = {
-  translateY: "translateY(-1px)",
+  hoverPosition: "translateY(-1px)",
+  defaultPosition: "translateY(0)",
+  clickScale: "scale(0.98)",
 };

@@ -5,9 +5,6 @@ import DefaultButton from "../../components/atoms/buttons/defaultButton";
 export default {
   title: "Default Button",
   component: DefaultButton,
-  argTypes: {
-    size: { control: "size" },
-  },
 } as ComponentMeta<typeof DefaultButton>;
 
 const Template: ComponentStory<typeof DefaultButton> = (args) => (
